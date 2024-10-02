@@ -23,17 +23,19 @@ const checkUserInput = () => {
   if (isNaN(input)) { // Check first if the input is not a number
     output.innerText = "Please enter a valid number";
     return;
-    } else if (input < 1) { // Check for negative values or zero
+   }
+   if (input < 1) { // Check for negative values or zero
     output.innerText = "Please enter a number greater than or equal to 1";
     return;
-   } else if (input > 3999) { // Check if input exceeds the upper limit
+   } 
+   if (input > 3999) { // Check if input exceeds the upper limit
     output.innerText = "Please enter a number less than or equal to 3999";
     return;
-    } else {
-    output.innerText = decimalToRoman(input);
-    number.value = "";
-    return ;
-  }
+    } 
+  
+  output.innerText = decimalToRoman(input);
+  number.value = "";
+  
 };
 
 const decimalToRoman = (num) => {
