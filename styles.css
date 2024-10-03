@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/*iPads, Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+/*Small screens, laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+/*Desktops, large screens*/
+@media (min-width: 1025px ) {
+
+}
