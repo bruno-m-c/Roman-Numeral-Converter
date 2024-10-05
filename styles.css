@@ -7,15 +7,73 @@ body {
 }
 
 h1 {
-    margin: 25% auto auto;
-    padding: 0.1em;
-    background: white;
+    margin: 2.8em auto auto;
+    padding: 0.2em;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
     font-family: 'Garamond', serif;
     font-size: 2.7em;
     text-align: center;
-    width: 50%;
-    
+    width: 60%;
+    min-width: 8em;
+    max-width: 12.5em;
 }
+
+.cont1 {
+    margin: 1em auto auto;
+    padding: 1.1em 0.2em;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    width: 60%;
+    min-width: 8em;
+    max-width: 34em;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(3, 1.5em);
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.instruction {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#number {
+    height: 1.8em;
+    background: rgb(240, 240, 240);
+    border: 1px solid rgb(66, 66, 66);
+    text-align: center;
+}
+
+#convert-btn {
+    font-size: 1em;
+    background: rgb(7, 214, 237);
+    border: 1px solid rgb(66, 66, 66);
+    height: 1.6em;
+}
+
+#convert-btn:hover {
+    color: rgb(7, 214, 237);
+    background: rgb(66, 66, 66);
+    transition: 0.2s;
+    border: 1px solid rgb(7, 214, 237);
+}
+
+#output {
+    margin: 1em auto;
+    /*padding: 1.1em 0.2em;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    width: 60%;
+    min-width: 8em;
+    max-width: 34em;*/
+}
+
 
 /*iPads, Tablets*/
 @media (min-width: 481px) and (max-width: 768px) {
