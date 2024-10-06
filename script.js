@@ -19,6 +19,8 @@ const romans = {
 
 const checkUserInput = () => {
   const input = parseInt(number.value);
+  output.classList.remove('hide');
+  output.classList.add('alert');
 
   if (isNaN(input)) { // Check first if the input is not a number
     output.innerText = "Please enter a valid number";
@@ -40,7 +42,9 @@ const checkUserInput = () => {
 
 const decimalToRoman = (num) => {
   const result = [];
-  
+  output.classList.remove('hide');
+  output.classList.remove('alert');
+
   for (let key in romans) {
     while (num >= romans[key]) {
       result.push(key);
@@ -48,6 +52,7 @@ const decimalToRoman = (num) => {
     }
   }
   return result.join('');
+  
 };
 
 convertBtn.addEventListener("click", checkUserInput);

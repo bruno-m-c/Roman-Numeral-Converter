@@ -15,9 +15,7 @@ h1 {
     font-family: 'Garamond', serif;
     font-size: 2.7em;
     text-align: center;
-    width: 60%;
-    min-width: 8em;
-    max-width: 12.5em;
+    width: clamp(330px, 60%, 12.5em);
 }
 
 .cont1 {
@@ -26,9 +24,7 @@ h1 {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     border-radius: 25px;
-    width: 60%;
-    min-width: 8em;
-    max-width: 34em;
+    width: clamp(330px, 60%, 34em);
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: repeat(3, 1.5em);
@@ -63,17 +59,28 @@ h1 {
     border: 1px solid rgb(7, 214, 237);
 }
 
-#output {
+.output {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin: 1em auto;
-    /*padding: 1.1em 0.2em;
+    padding: 1.1em 0.2em;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     border-radius: 25px;
-    width: 60%;
-    min-width: 8em;
-    max-width: 34em;*/
+    width: clamp(330px, 60%, 25.6em);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3em;
 }
 
+.hide {
+    display: none;
+}
+
+.alert {
+    background: rgba(255, 0, 0, 0.3);
+    color: rgb(255, 255, 255)
+}
 
 /*iPads, Tablets*/
 @media (min-width: 481px) and (max-width: 768px) {
